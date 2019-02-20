@@ -1,7 +1,7 @@
 {
 
   "manifest_version": 2,
-  "name": "MOM - Media Organizational Manager",
+  "name": "MOM - Modern Online Monitor",
   "version": "2.1",
 
   "description": "Media Organizational Manager",
@@ -13,7 +13,7 @@
     "storage",
     "downloads"
   ],
-    //All non-whitelisted websites are now blocked. Go to bkg.js and add websites to the allowed array to add them to the whitelist.
+
   "background": {
     "scripts": ["bkg.js"]
   },
@@ -21,7 +21,7 @@
   "options_page": "/options/options.html",
 
   "browser_action": {
-      "default_popup": "popup.html" //This is the file opened when you click on the icon
+      "default_popup": "popup.html" 
   },
   "icons": {
       "16": "images/favicon-16x16.png",

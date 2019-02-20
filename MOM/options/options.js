@@ -4,11 +4,11 @@ window.onload = function(){
         if (loggedin){
             //default settings values
             var li1 = 1, //Allow all web content
-            li2 = 0, //Enable whitelist
-            li3 = 0,
-            li4 = 0,
-            li5 = 0,
-            active = "awc";
+                li2 = 0, //Enable whitelist
+                li3 = 1,
+                li4 = 0,
+                li5 = 0,
+                active = "awc";
             document.getElementById("backicon").addEventListener('click', function(){
                 window.history.go(-1);
             });

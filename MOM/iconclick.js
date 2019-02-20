@@ -18,6 +18,7 @@ window.onload = function(){
                 document.getElementById("newpin").style.display = "block";
                 document.getElementById("yes").addEventListener('click', function(){
                     chrome.storage.sync.set({pswd: PIN})
+                    chrome.storage.sync.set({loggedin: true});
                     window.open('dashboard.html', '_blank');
                 });
                 document.getElementById("no").addEventListener('click', function(){
