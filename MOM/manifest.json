@@ -1,12 +1,12 @@
 {
 
   "manifest_version": 2,
-  "name": "MOM - Modern Online Monitor",
-  "version": "2.1",
+  "name": "MOM | Modern Online Monitor",
+  "version": "3.0",
 
-  "description": "Media Organizational Manager",
+  "description": "Modern Online Monitor",
 
-  "homepage_url": "https://www.elderhs.org/page",
+  "homepage_url": "https://modernonlinemonitor.netlify.com",
 
   "permissions": [
     "tabs",
@@ -24,10 +24,10 @@
       "default_popup": "popup.html" 
   },
   "icons": {
-      "16": "images/favicon-16x16.png",
-      "32": "images/favicon-32x32.png", //These are the only actual .ico files.
-      "48": "images/MOM.png",
-      "128": "images/MOM.png" //This is still not the exact size, but it's close enough.
+      "16": "images/MOM16.png",
+      "32": "images/MOM32.png",
+      "48": "images/MOM48.png",
+      "128": "images/MOM128.png"
   }
 
 }
