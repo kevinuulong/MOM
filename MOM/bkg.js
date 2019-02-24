@@ -2,7 +2,7 @@ window.onload = function(){
     chrome.tabs.onRemoved.addListener(function(){
         chrome.storage.sync.set({loggedin: false});
     })
-    var allowed = ["chrome-extension://","chrome://","google.com/","nbclearn.com/"]; //DO NOT REMOVE chrome-extension:// or chrome://
+    var allowed = ["chrome-extension://","chrome://newtab","google.com/","nbclearn.com/","unsplash.com/"]; //DO NOT REMOVE chrome-extension:// or chrome://
     chrome.tabs.onUpdated.addListener(function (){
         chrome.storage.sync.get(['wl'], function(result){
             var wl = result.wl;
