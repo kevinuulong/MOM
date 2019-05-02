@@ -1,8 +1,13 @@
 window.onload = function(){
     chrome.tabs.onRemoved.addListener(function(){
         chrome.storage.sync.set({loggedin: false});
-    })
-    chrome.storage.sync.set({allowed: ["edge://","opera://","chrome-extension://","chrome://newtab","google.com/","nbclearn.com/","unsplash.com/"]}); //DO NOT REMOVE chrome-extension:// or chrome://
+    });
+    chrome.storage.sync.get(['pswd'], function(result){
+        var pswd = result.pswd;
+        if (pswd == undefined){
+            chrome.storage.sync.set({allowed: ["edge://","opera://","chrome-extension://","chrome://newtab","google.com/","nbclearn.com/","unsplash.com/"]}); //DO NOT REMOVE chrome-extension:// or chrome://
+        }
+    });
     chrome.tabs.onUpdated.addListener(function (){
         chrome.storage.sync.get(['wl'], function(result){
             var wl = result.wl;

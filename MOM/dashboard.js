@@ -40,6 +40,9 @@ window.onload = function(){
                 x.className = x.className.replace(" w3-show", "");
                 }
             };
+            document.getElementById("addsite").addEventListener("submit", function(){
+                chrome.extension.getBackgroundPage().addsite(document.getElementById("addsitebox").value);
+            });
         }
         else {
             chrome.tabs.update(null,{url: chrome.extension.getURL("blocked/blocked.html")});
