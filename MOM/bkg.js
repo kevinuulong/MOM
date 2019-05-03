@@ -57,3 +57,12 @@ function addsite(site){
         chrome.storage.sync.set({allowed: allowed});
     });
 };
+
+function removesite(index){
+    chrome.storage.sync.get({allowed: []}, function(result){
+        var allowed = result.allowed;
+        allowed.splice(index,1);
+        console.log (allowed);
+        chrome.storage.sync.set({allowed: allowed});
+    });
+};
